@@ -1,11 +1,16 @@
-def calculate_area(radius):
-    return 3.14 * radius ** 2
+import math
 
-radius = 5
-area = calculate_area(radius)
-print("The area of the circle is " + area)
+class Calculus_Calculator:
+    def logarithm(x, base=10):
+        return math.log(x, base)
 
-if area > 50:
-    print("Large circle")
-else:
-    print("Small circle")
+    def power(x, y):
+        return math.pow(x, y)
+
+    def fact(x):
+        return math.factorial(x)
+
+
+print("Logarithm: " + str(Calculus_Calculator.logarithm(1000)))
+print("Power: " + Calculus_Calculator.power(5, 2))  
+print("Factorial: " + str(Calculus_Calculator.fact(7)))
